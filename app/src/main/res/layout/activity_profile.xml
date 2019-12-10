@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="150dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/euserround"
+            android:layout_marginTop="5dp"
+            android:layout_height="150dp"/>
+
+       <RelativeLayout
+           android:id="@+id/head"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:layout_marginTop="10dp"
+           android:layout_below="@+id/img">
+
+
+           <TextView
+               android:id="@+id/textheading"
+               android:layout_width="180dp"
+               android:textAlignment="center"
+               android:gravity="center"
+               android:textSize="16dp"
+               android:text="ygftf"
+               android:layout_height="40dp"
+               android:layout_marginTop="5dp" />
+
+
+
+       </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corner1">
+
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="120dp"
+                android:text=" Name "
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp" />
+
+
+            <EditText
+                android:id="@+id/tt1"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/t1" />
+
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" Password "
+                android:layout_below="@+id/t1"
+                android:layout_height="40dp" />
+
+
+            <EditText
+                android:id="@+id/tt2"
+                android:layout_width="230dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:layout_below="@+id/tt1"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/t1" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" State "
+                android:layout_below="@+id/t2"
+                android:layout_height="40dp" />
+
+
+            <Spinner
+                android:id="@+id/tt3"
+                android:layout_width="230dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14dp"
+                android:layout_below="@+id/tt2"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/t1" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" City "
+                android:layout_below="@+id/t3"
+                android:layout_height="40dp" />
+
+
+            <Spinner
+                android:id="@+id/tt4"
+                android:layout_width="230dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tt3"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/t1" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" Phone "
+                android:layout_below="@+id/t4"
+                android:layout_height="40dp" />
+
+
+            <EditText
+                android:id="@+id/tt5"
+                android:layout_width="230dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tt4"
+                android:inputType="phone"
+                android:textSize="14dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/t1" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" Street "
+                android:layout_height="40dp"
+                android:layout_below="@+id/t5" />
+
+
+
+            <EditText
+                android:id="@+id/tt6"
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tt5"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/t1"
+                android:isIndicator="true"
+                android:numStars="5"
+                />
+
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/t6"
+                android:layout_marginTop="5dp"
+                android:text=" Land Mark" />
+
+            <EditText
+                android:id="@+id/tt7"
+                android:layout_width="230dp"
+                android:layout_below="@+id/tt6"
+                android:layout_toRightOf="@+id/t7"
+                android:textSize="14dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" Pincode "
+                android:layout_below="@+id/t7"
+                android:layout_height="40dp" />
+
+
+            <EditText
+                android:id="@+id/tt8"
+                android:layout_width="230dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tt7"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/t1" />
+
+
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="120dp"
+                android:layout_marginTop="5dp"
+                android:text=" Alternate Number "
+                android:layout_below="@+id/t8"
+                android:layout_height="40dp" />
+
+
+            <EditText
+                android:id="@+id/tt9"
+                android:layout_width="230dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tt8"
+                android:textSize="14dp"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/t1" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/r1"
+            android:background="@drawable/corner1"
+            android:layout_marginTop="15dp"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:background="@drawable/buttonback"
+                android:textColor="#FFFFFF"
+                android:text="Back"
+                android:layout_height="40dp"
+                />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:background="@drawable/buttonback"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf="@+id/b1"
+                android:text="Update"
+                android:layout_height="40dp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

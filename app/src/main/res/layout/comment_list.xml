@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/rating1"
+        android:layout_width="120dp"
+        android:layout_marginTop="5dp"
+        android:text=" Rating "
+        android:textStyle="bold"
+        android:layout_height="40dp"
+        android:layout_below="@+id/t4" />
+
+
+
+
+    <RatingBar
+        android:id="@+id/rating2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rating1"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="-26dp"
+        android:isIndicator="true"
+        android:progressTint="#0064A8"
+        android:numStars="5"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:theme="@style/RatingBar"
+        android:transformPivotX="0dp"
+        android:transformPivotY="0dp" />
+
+    <TextView
+        android:id="@+id/tcommentheading"
+        android:layout_below="@+id/rating1"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text=" Comments  "
+        android:textStyle="bold"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:id="@+id/tcomment"
+        android:layout_below="@+id/tcommentheading"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

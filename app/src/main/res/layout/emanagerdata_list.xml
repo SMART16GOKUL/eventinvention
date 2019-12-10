@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/rel"
+    android:background="@drawable/corner1"
+    android:layout_width="match_parent"
+    android:layout_height="145dp">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/corner1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="100dp"
+                android:background="@drawable/eventmanager"
+                android:layout_height="120dp"/>
+
+            <RelativeLayout
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/corner1"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/im"
+                >
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text=" Name "
+                    android:textStyle="bold"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/tname"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/t1"
+                    android:layout_height="30dp"
+                    android:textSize="12dp"  />
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text=" City "
+                    android:textStyle="bold"
+                    android:layout_below="@+id/t1"
+                    android:textSize="12dp"  />
+
+
+                <TextView
+                    android:id="@+id/tcity"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/t2"
+                    android:layout_below="@+id/tname"
+                    android:layout_height="30dp"
+                    android:textSize="12dp" />
+
+
+
+
+                <RatingBar
+                    android:id="@+id/rratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/t2"
+                    android:layout_marginRight="-100dp"
+                    android:layout_marginBottom="-26dp"
+                    android:isIndicator="true"
+                    android:progressTint="#0064A8"
+                    android:numStars="5"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:theme="@style/RatingBar"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text=" Company   Name "
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tusertype"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/t3"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="70dp"
+                android:layout_height="30dp"
+                android:textSize="12dp"  />
+
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
